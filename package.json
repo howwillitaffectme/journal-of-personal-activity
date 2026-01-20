@@ -1,5 +1,5 @@
 {
-  "name": "lifetracker-pro",
+  "name": "journal-of-personal-activity",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,5 +20,11 @@
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
+  },
+  "homepage": "https://github.com/howwillitaffectme/journal-of-personal-activity",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
+
