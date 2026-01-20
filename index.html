@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeTracker Pro | Academic Journal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-serif: 'EB Garamond', serif;
+            --bg-warm: #fcfaf7;
+        }
+        body { 
+            font-family: var(--font-serif); 
+            background-color: var(--bg-warm);
+            color: #000000;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Enforce Serif everywhere including numerals */
+        button, input, select, textarea, span, div, table, th, td, h1, h2, h3 {
+            font-family: var(--font-serif) !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: var(--bg-warm);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d4d4d4;
+        }
+        
+        /* LaTeX style table rules - precise thin double lines (hairlines) */
+        .latex-toprule { 
+            border-top: 3px double #000; 
+        }
+        .latex-midrule { 
+            border-bottom: 1px solid #000; 
+        }
+        .latex-bottomrule { 
+            border-bottom: 3px double #000;
+        }
+
+        /* Scientific grid cells - minimalist squares */
+        .cell-square {
+            width: 16px;
+            height: 16px;
+            border: 0.5px solid #000;
+            transition: all 0.1s ease;
+            box-sizing: border-box;
+        }
+        
+        /* Remove tap highlight on mobile */
+        * { -webkit-tap-highlight-color: transparent; }
+
+        /* Ensure sticky headers match the paper background */
+        th.sticky, td.sticky {
+            background-color: var(--bg-warm) !important;
+        }
+
+        .tabular-nums {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.3/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.6.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.34.0",
+    "react": "https://aistudiocdn.com/react@^19.2.3",
+    "react/": "https://aistudiocdn.com/react@^19.2.3/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/journal-of-personal-activity/assets/index-DIXwyX7f.js"></script>
+</head>
+<body class="selection:bg-slate-200">
+    <div id="root"></div>
+</body>
+</html>
